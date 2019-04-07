@@ -1,16 +1,10 @@
 package com.cc.designpatterns;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
-
-@RunWith(SpringRunner.class)
-@SpringBootTest
 public class DesignPatternsApplicationTests {
+    private static DesignPatternsApplication designPatternsApplication = new DesignPatternsApplication();
 
-	@Test
-	public void contextLoads() {
-	}
-
+    public static void main(String[] args) {
+        String result = designPatternsApplication.hello();
+        System.out.println(result);
+    }
 }
