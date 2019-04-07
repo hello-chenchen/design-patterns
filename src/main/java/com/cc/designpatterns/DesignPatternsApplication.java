@@ -10,4 +10,7 @@ public class DesignPatternsApplication {
         return "hello world";
     }
 
+    public int foo() {
+        return 23;
+    }
 }

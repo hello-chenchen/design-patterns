@@ -1,10 +1,20 @@
 package com.cc.designpatterns;
 
-public class DesignPatternsApplicationTests {
-    private static DesignPatternsApplication designPatternsApplication = new DesignPatternsApplication();
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-    public static void main(String[] args) {
+public class DesignPatternsApplicationTests {
+    DesignPatternsApplication designPatternsApplication = new DesignPatternsApplication();
+
+    @Test
+    public void helloSuccessTest() {
         String result = designPatternsApplication.hello();
-        System.out.println(result);
+        assertEquals("hello world", result);
+    }
+
+    @Test
+    public void fooSuccessTest() {
+        int result = designPatternsApplication.foo();
+        assertEquals(23, result);
     }
 }
