@@ -1,9 +1,6 @@
 plugins {
-	// id 'org.springframework.boot' version '2.1.4.RELEASE'
 	id 'java'
 }
-
-// apply plugin: 'io.spring.dependency-management'
 
 group = 'com.cc'
 version = '0.0.1-SNAPSHOT'
@@ -15,6 +12,4 @@ repositories {
 
 dependencies {
 	testImplementation 'junit:junit:4.12'
-	// implementation 'org.springframework.boot:spring-boot-starter'
-	// testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
