@@ -3,18 +3,20 @@ package com.cc.designpatterns;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
+import com.cc.designpatterns.factorypattern.*;
+
 public class DesignPatternsApplicationTests {
-    DesignPatternsApplication designPatternsApplication = new DesignPatternsApplication();
+    Factory factory = new Factory();
 
     @Test
-    public void helloSuccessTest() {
-        String result = designPatternsApplication.hello();
-        assertEquals("hello world", result);
+    public void generateFactoryMethodATest() {
+        FactoryMethodInterface result = factory.generateFactoryMethod(FactoryMethodType.CC_ENUM_FACTORY_METHOD_A);
+        assertEquals("FactoryMethodA::invokeFactoryMethod", result.invokeFactoryMethod());
     }
 
     @Test
-    public void fooSuccessTest() {
-        int result = designPatternsApplication.foo();
-        assertEquals(23, result);
+    public void generateFactoryMethodBTest() {
+        FactoryMethodInterface result = factory.generateFactoryMethod(FactoryMethodType.CC_ENUM_FACTORY_METHOD_B);
+        assertEquals("FactoryMethodB::invokeFactoryMethod", result.invokeFactoryMethod());
     }
 }
