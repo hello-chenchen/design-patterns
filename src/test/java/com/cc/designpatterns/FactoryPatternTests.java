@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 
 import com.cc.designpatterns.factorypattern.*;
 
-public class DesignPatternsApplicationTests {
+public class FactoryPatternTests {
     Factory factory = new Factory();
 
     @Test
