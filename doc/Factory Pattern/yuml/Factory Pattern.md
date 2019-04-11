@@ -1,4 +1,0 @@
-```yuml
-[CallClass|type: class|+ main() : void],[Factory|type: class||+ generateFactoryMethod(FactoryType: type) : FactoryMethodInterface],[FactoryType|type: enum|+ CC_ENUM_FACTORY_METHOD_A;+ CC_ENUM_FACTORY_METHOD_A],[FactoryMethodInterface|type: interface||+ invokeFactoryMethod() : String],[FactoryMethodA|type: class||+ invokeFactoryMethod() : String],[FactoryMethodB|type: class||+ invokeFactoryMethod() : String],[FactoryMethodInterface]^-.-[FactoryMethodA],[FactoryMethodInterface]^-.-[FactoryMethodB],[Factory]^-[FactoryMethodInterface],[FactoryType]-<>[Factory],[CallClass]-call>[Factory]
-```
-[yuml draw](https://yuml.me/diagram/nofunky/class/draw)
