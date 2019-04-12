@@ -6,6 +6,9 @@ Design Patterns for java and c++
 - Mac OS (Current 10.12.6 tested)
 - Windows (Current Windows 10 2016 LTS Version tested)
 
+## Configuration(plugins, hot key...)
+- Please Read: [cc-configuration](https://github.com/cc-libraries/cc-configuration)
+
 ## The Code Style
 - Please Read: [cc-code-style](https://github.com/hello-chenchen/cc-code-style)
 
