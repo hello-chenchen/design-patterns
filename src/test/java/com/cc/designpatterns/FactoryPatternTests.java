@@ -10,13 +10,13 @@ public class FactoryPatternTests {
 
     @Test
     public void generateFactoryMethodATest() {
-        FactoryMethodInterface result = factory.generateFactoryMethod(FactoryMethodType.CC_ENUM_FACTORY_METHOD_A);
-        assertEquals("FactoryMethodA::invokeFactoryMethod", result.invokeFactoryMethod());
+        Product result = factory.generateFactoryMethod(ProductType.CC_ENUM_PRODUCT_A);
+        assertEquals("ProductA::produce", result.produce());
     }
 
     @Test
     public void generateFactoryMethodBTest() {
-        FactoryMethodInterface result = factory.generateFactoryMethod(FactoryMethodType.CC_ENUM_FACTORY_METHOD_B);
-        assertEquals("FactoryMethodB::invokeFactoryMethod", result.invokeFactoryMethod());
+        Product result = factory.generateFactoryMethod(ProductType.CC_ENUM_PRODUCT_B);
+        assertEquals("ProductB::produce", result.produce());
     }
 }
