@@ -9,26 +9,26 @@ public class AbstractFactoryPatternTest {
     Factory factory = new Factory();
 
     @Test
-    public void invokeFactoryAImplAMethodTest() {
-        FactoryAInterface factoryAImplA = factory.generateFactory(FactoryType.CC_ENUM_FACTORY_TYPE_A).getFactoryAInterface(FactoryAType.CC_ENUM_FACTORYA_METHOD_A);
-        assertEquals("FactoryAImplA::invokeMethod", factoryAImplA.invokeMethod());
+    public void invokeProductA1MethodTest() {
+        ProductA productA1 = factory.generateFactory(FactoryType.CC_ENUM_FACTORY_A).getProductA();
+        assertEquals("ProductA1::produceA", productA1.produceA());
     }
 
     @Test
-    public void invokeFactoryAImplBMethodTest() {
-        FactoryAInterface factoryAImplB = factory.generateFactory(FactoryType.CC_ENUM_FACTORY_TYPE_A).getFactoryAInterface(FactoryAType.CC_ENUM_FACTORYA_METHOD_B);
-        assertEquals("FactoryAImplB::invokeMethod", factoryAImplB.invokeMethod());
+    public void invokeProductB1MethodTest() {
+        ProductB productB1 = factory.generateFactory(FactoryType.CC_ENUM_FACTORY_A).getProductB();
+        assertEquals("ProductB1::produceB", productB1.produceB());
     }
 
     @Test
-    public void invokeFactoryBImplAMethodTest() {
-        FactoryBInterface factoryBImplA = factory.generateFactory(FactoryType.CC_ENUM_FACTORY_TYPE_B).getFactoryBInterface(FactoryBType.CC_ENUM_FACTORYB_METHOD_A);
-        assertEquals("FactoryBImplA::invokeMethod", factoryBImplA.invokeMethod());
+    public void invokeProductA2MethodTest() {
+        ProductA productA2 = factory.generateFactory(FactoryType.CC_ENUM_FACTORY_B).getProductA();
+        assertEquals("ProductA2::produceA", productA2.produceA());
     }
 
     @Test
-    public void invokeFactoryBImplBMethodTest() {
-        FactoryBInterface factoryBImplB = factory.generateFactory(FactoryType.CC_ENUM_FACTORY_TYPE_B).getFactoryBInterface(FactoryBType.CC_ENUM_FACTORYB_METHOD_B);
-        assertEquals("FactoryBImplB::invokeMethod", factoryBImplB.invokeMethod());
+    public void invokeProductB2MethodTest() {
+        ProductB productB2 = factory.generateFactory(FactoryType.CC_ENUM_FACTORY_B).getProductB();
+        assertEquals("ProductB2::produceB", productB2.produceB());
     }
 }

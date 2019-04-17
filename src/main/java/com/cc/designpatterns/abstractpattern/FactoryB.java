@@ -1,33 +1,21 @@
 package com.cc.designpatterns.abstractpattern;
 
-import com.cc.designpatterns.abstractpattern.FactoryBType;
 import com.cc.designpatterns.abstractpattern.AbstractFactory;
-import com.cc.designpatterns.abstractpattern.FactoryBImplA;
-import com.cc.designpatterns.abstractpattern.FactoryBImplB;
+import com.cc.designpatterns.abstractpattern.ProductA;
+import com.cc.designpatterns.abstractpattern.ProductA2;
+import com.cc.designpatterns.abstractpattern.ProductB;
+import com.cc.designpatterns.abstractpattern.ProductB2;
 
 public class FactoryB extends AbstractFactory {
 
     @Override
-    public FactoryAInterface getFactoryAInterface(FactoryAType type) {
-        return null;
+    public ProductA getProductA() {
+        return new ProductA2();
     }
 
     @Override
-    public FactoryBInterface getFactoryBInterface(FactoryBType type) {
-        FactoryBInterface factoryBInterface = null;
-        switch(type) {
-            case CC_ENUM_FACTORYB_METHOD_A: {
-                factoryBInterface = new FactoryBImplA();
-                break;
-            }
-            case CC_ENUM_FACTORYB_METHOD_B: {
-                factoryBInterface = new FactoryBImplB();
-                break;
-            }
-            default:
-                break;
-        }
-
-        return factoryBInterface;
+    public ProductB getProductB() {
+        return new ProductB2();
     }
+
 }

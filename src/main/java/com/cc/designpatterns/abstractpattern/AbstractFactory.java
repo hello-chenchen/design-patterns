@@ -1,9 +1,9 @@
 package com.cc.designpatterns.abstractpattern;
 
-import com.cc.designpatterns.abstractpattern.FactoryAInterface;
-import com.cc.designpatterns.abstractpattern.FactoryBInterface;
+// import com.cc.designpatterns.factorypattern.ProductA;
+// import com.cc.designpatterns.factorypattern.ProductB;
 
 public abstract class AbstractFactory {
-    public abstract FactoryAInterface getFactoryAInterface(FactoryAType type);
-    public abstract FactoryBInterface getFactoryBInterface(FactoryBType type);
+    public abstract ProductA getProductA();
+    public abstract ProductB getProductB();
 }
