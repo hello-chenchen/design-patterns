@@ -15,6 +15,10 @@ public class Factory {
                 abstractFactory = new FactoryB();
                 break;
             }
+            case CC_ENUM_FACTORY_C: {
+                abstractFactory = new FactoryC();
+                break;
+            }
             default:
                 break;
         }

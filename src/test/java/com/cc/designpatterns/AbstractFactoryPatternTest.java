@@ -31,4 +31,16 @@ public class AbstractFactoryPatternTest {
         ProductB productB2 = factory.generateFactory(FactoryType.CC_ENUM_FACTORY_B).getProductB();
         assertEquals("ProductB2::produceB", productB2.produceB());
     }
+
+    @Test
+    public void invokeProductA3MethodTest() {
+        ProductA productA3 = factory.generateFactory(FactoryType.CC_ENUM_FACTORY_C).getProductA();
+        assertEquals("ProductA3::produceA", productA3.produceA());
+    }
+
+    @Test
+    public void invokeProductB3MethodTest() {
+        ProductB productB3 = factory.generateFactory(FactoryType.CC_ENUM_FACTORY_C).getProductB();
+        assertEquals("ProductB3::produceB", productB3.produceB());
+    }
 }
