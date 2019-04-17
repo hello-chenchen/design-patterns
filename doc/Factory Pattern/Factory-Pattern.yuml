@@ -11,7 +11,7 @@
 [<<interface>>;Product]^-.-[ProductB]
 // [Factory]->[<<interface>>;Product]
 [Factory]-.->[<<enum>>;ProductType]
+[Factory]->[<<interface>>;Product]
 [Factory]-.->[ProductA]
 [Factory]-.->[ProductB]
-[<<interface>>;Product]<-[Factory]
 [CallClass]call->[Factory]
