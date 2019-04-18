@@ -12,6 +12,14 @@
 <!-- A0 -->
 <g id="node1" class="node">
 <title>A0</title>
+<polygon fill="#fff8dc" stroke="#000000" points="142.3476,-506 51.6524,-506 51.6524,-470 148.3476,-470 148.3476,-500 142.3476,-506"/>
+<polyline fill="none" stroke="#000000" points="142.3476,-506 142.3476,-500 "/>
+<polyline fill="none" stroke="#000000" points="148.3476,-500 142.3476,-500 "/>
+<text text-anchor="middle" x="100" y="-485" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Factory Pattern</text>
+</g>
+<!-- A1 -->
+<g id="node2" class="node">
+<title>A1</title>
 <polygon fill="#ff0000" stroke="transparent" points="166.5,-446 166.5,-530 249.5,-530 249.5,-446 166.5,-446"/>
 <polygon fill="none" stroke="#000000" points="167,-498 167,-530 250,-530 250,-498 167,-498"/>
 <text text-anchor="start" x="187.3935" y="-511" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">CallClass</text>
@@ -19,25 +27,25 @@
 <polygon fill="none" stroke="#000000" points="167,-446 167,-478 250,-478 250,-446 167,-446"/>
 <text text-anchor="start" x="176.692" y="-459" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+ main() : void</text>
 </g>
-<!-- A1 -->
-<g id="node2" class="node">
-<title>A1</title>
+<!-- A2 -->
+<g id="node3" class="node">
+<title>A2</title>
 <polygon fill="none" stroke="#000000" points="109,-364 109,-396 308,-396 308,-364 109,-364"/>
 <text text-anchor="start" x="191.8325" y="-377" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Factory</text>
 <polygon fill="none" stroke="#000000" points="109,-344 109,-364 308,-364 308,-344 109,-344"/>
 <polygon fill="none" stroke="#000000" points="109,-312 109,-344 308,-344 308,-312 109,-312"/>
 <text text-anchor="start" x="118.8915" y="-325" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+getProduct(ProductType: type):Product</text>
 </g>
-<!-- A0&#45;&gt;A1 -->
+<!-- A1&#45;&gt;A2 -->
 <g id="edge7" class="edge">
-<title>A0&#45;&gt;A1</title>
+<title>A1&#45;&gt;A2</title>
 <path fill="none" stroke="#000000" d="M208,-445.9692C208,-433.4932 208,-419.6692 208,-406.6106"/>
 <polygon fill="#000000" stroke="#000000" points="208,-396.3424 212.5001,-406.3423 208,-401.3424 208.0001,-406.3424 208.0001,-406.3424 208.0001,-406.3424 208,-401.3424 203.5001,-406.3424 208,-396.3424 208,-396.3424"/>
 <text text-anchor="middle" x="199.5476" y="-424.8431" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">call</text>
 </g>
-<!-- A2 -->
-<g id="node3" class="node">
-<title>A2</title>
+<!-- A3 -->
+<g id="node4" class="node">
+<title>A3</title>
 <polygon fill="none" stroke="#000000" points="0,-214 0,-258 142,-258 142,-214 0,-214"/>
 <text text-anchor="start" x="46.819" y="-239" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">&lt;&lt;enum&gt;&gt;</text>
 <text text-anchor="start" x="42.6595" y="-227" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ProductType</text>
@@ -45,15 +53,15 @@
 <text text-anchor="start" x="9.754" y="-195" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+CC_ENUM_PRODUCT_A</text>
 <text text-anchor="start" x="9.754" y="-183" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+CC_ENUM_PRODUCT_B</text>
 </g>
-<!-- A1&#45;&gt;A2 -->
+<!-- A2&#45;&gt;A3 -->
 <g id="edge3" class="edge">
-<title>A1&#45;&gt;A2</title>
+<title>A2&#45;&gt;A3</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M166.8955,-311.9954C152.6715,-297.4599 136.5607,-280.9963 121.6604,-265.7697"/>
 <polygon fill="#000000" stroke="#000000" points="114.4565,-258.4081 124.6668,-262.408 117.9535,-261.9817 121.4506,-265.5553 121.4506,-265.5553 121.4506,-265.5553 117.9535,-261.9817 118.2343,-268.7027 114.4565,-258.4081 114.4565,-258.4081"/>
 </g>
-<!-- A3 -->
-<g id="node4" class="node">
-<title>A3</title>
+<!-- A4 -->
+<g id="node5" class="node">
+<title>A4</title>
 <polygon fill="none" stroke="#000000" points="199,-218 199,-262 296,-262 296,-218 199,-218"/>
 <text text-anchor="start" x="216.651" y="-243" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">&lt;&lt;interface&gt;&gt;</text>
 <text text-anchor="start" x="230.273" y="-231" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">Product</text>
@@ -61,15 +69,15 @@
 <polygon fill="none" stroke="#000000" points="199,-166 199,-198 296,-198 296,-166 199,-166"/>
 <text text-anchor="start" x="208.743" y="-179" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+produce():String</text>
 </g>
-<!-- A1&#45;&gt;A3 -->
+<!-- A2&#45;&gt;A4 -->
 <g id="edge4" class="edge">
-<title>A1&#45;&gt;A3</title>
+<title>A2&#45;&gt;A4</title>
 <path fill="none" stroke="#000000" d="M219.7013,-311.9954C223.1699,-299.544 227.0326,-285.6777 230.7353,-272.3861"/>
 <polygon fill="#000000" stroke="#000000" points="233.5264,-262.3669 235.1777,-273.2077 232.1846,-267.1835 230.8428,-272.0001 230.8428,-272.0001 230.8428,-272.0001 232.1846,-267.1835 226.5078,-270.7925 233.5264,-262.3669 233.5264,-262.3669"/>
 </g>
-<!-- A4 -->
-<g id="node5" class="node">
-<title>A4</title>
+<!-- A5 -->
+<g id="node6" class="node">
+<title>A5</title>
 <polygon fill="none" stroke="#000000" points="141,-84 141,-116 238,-116 238,-84 141,-84"/>
 <text text-anchor="start" x="168.9385" y="-97" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ProductA</text>
 <polygon fill="none" stroke="#000000" points="141,-52 141,-84 238,-84 238,-52 141,-52"/>
@@ -78,15 +86,15 @@
 <polygon fill="none" stroke="#000000" points="141,0 141,-32 238,-32 238,0 141,0"/>
 <text text-anchor="start" x="150.743" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+produce():String</text>
 </g>
-<!-- A1&#45;&gt;A4 -->
+<!-- A2&#45;&gt;A5 -->
 <g id="edge5" class="edge">
-<title>A1&#45;&gt;A4</title>
+<title>A2&#45;&gt;A5</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M197.9824,-311.6505C194.7703,-296.1278 191.6256,-278.3572 190,-262 185.5213,-216.9345 185.2672,-165.9926 186.1349,-126.2881"/>
 <polygon fill="#000000" stroke="#000000" points="186.3849,-116.1862 190.636,-126.2945 186.2611,-121.1846 186.1374,-126.1831 186.1374,-126.1831 186.1374,-126.1831 186.2611,-121.1846 181.6387,-126.0717 186.3849,-116.1862 186.3849,-116.1862"/>
 </g>
-<!-- A5 -->
-<g id="node6" class="node">
-<title>A5</title>
+<!-- A6 -->
+<g id="node7" class="node">
+<title>A6</title>
 <polygon fill="none" stroke="#000000" points="266,-84 266,-116 363,-116 363,-84 266,-84"/>
 <text text-anchor="start" x="293.9385" y="-97" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">ProductB</text>
 <polygon fill="none" stroke="#000000" points="266,-52 266,-84 363,-84 363,-52 266,-52"/>
@@ -95,21 +103,21 @@
 <polygon fill="none" stroke="#000000" points="266,0 266,-32 363,-32 363,0 266,0"/>
 <text text-anchor="start" x="275.743" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#000000">+produce():String</text>
 </g>
-<!-- A1&#45;&gt;A5 -->
+<!-- A2&#45;&gt;A6 -->
 <g id="edge6" class="edge">
-<title>A1&#45;&gt;A5</title>
+<title>A2&#45;&gt;A6</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M266.7814,-311.8559C281.9296,-297.829 296.3787,-280.8995 305,-262 324.2603,-219.7777 326.1763,-167.3942 323.4499,-126.2817"/>
 <polygon fill="#000000" stroke="#000000" points="322.6645,-116.0852 327.9193,-125.7101 323.0485,-121.0705 323.4326,-126.0557 323.4326,-126.0557 323.4326,-126.0557 323.0485,-121.0705 318.9459,-126.4014 322.6645,-116.0852 322.6645,-116.0852"/>
 </g>
-<!-- A3&#45;&gt;A4 -->
+<!-- A4&#45;&gt;A5 -->
 <g id="edge1" class="edge">
-<title>A3&#45;&gt;A4</title>
+<title>A4&#45;&gt;A5</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M225.6195,-156.4937C220.7174,-143.309 215.5028,-129.2833 210.5919,-116.0748"/>
 <polygon fill="none" stroke="#000000" points="222.3593,-157.7685 229.1248,-165.9219 228.9205,-155.3291 222.3593,-157.7685"/>
 </g>
-<!-- A3&#45;&gt;A5 -->
+<!-- A4&#45;&gt;A6 -->
 <g id="edge2" class="edge">
-<title>A3&#45;&gt;A5</title>
+<title>A4&#45;&gt;A6</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M271.6982,-156.4937C277.3609,-143.309 283.3847,-129.2833 289.0576,-116.0748"/>
 <polygon fill="none" stroke="#000000" points="268.3793,-155.3523 267.6489,-165.9219 274.8112,-158.1148 268.3793,-155.3523"/>
 </g>
