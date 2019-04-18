@@ -1,0 +1,14 @@
+// {type:class}
+// {generate:true}
+// {direction:topDown}
+[note: Sample Builder Pattern{bg:cornsilk}]
+[CallClass|+main():void{bg:red}]
+[Director||+generateProduct(Builder: builder):Product]
+[Builder||+buildPartA():boolean;+buildPartB():boolean]
+[Product|-partA:String;-partB:String|+getPartA():String;+setPartA():void;+getPartB():String;+setPartB():void]
+[ProductBuilder|-product:Product|+buildPartA():boolean;+buildPartB():boolean;+getProduct():Product]
+[ProductBuilder]-.->[Product]
+[CallClass]->[ProductBuilder]
+[CallClass]builder->[Director]
+[Builder]^-.-[ProductBuilder]
+[Director]+->[Builder]
