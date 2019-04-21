@@ -1,0 +1,19 @@
+// {type:class}
+// {direction:topDown}
+// {generate: true}
+[note: Factory Pattern{bg:cornsilk}]
+[CallClass||+main():void{bg:red}]
+[<<interface>>;Factory||+getProduct():Product]
+[FactoryA||+getProduct():Product]
+[FactoryB||+getProduct():Product]
+[<<interface>>;Product||+produce():String]
+[ProductA||+produce():String]
+[ProductB||+produce():String]
+[CallClass]->[<<interface>>;Factory]
+[CallClass]->[<<interface>>;Product]
+[<<interface>>;Factory]^-.-[FactoryA]
+[<<interface>>;Factory]^-.-[FactoryB]
+[<<interface>>;Product]^-.-[ProductA]
+[<<interface>>;Product]^-.-[ProductB]
+[FactoryA]-.->[ProductA]
+[FactoryB]-.->[ProductB]

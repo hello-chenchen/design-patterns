@@ -1,7 +1,7 @@
 // {type:class}
 // {generate:true}
 // {direction:topDown}
-[note: Factory Pattern{bg:cornsilk}]
+[note: Sample Factory Pattern{bg:cornsilk}]
 [CallClass||+ main() : void{bg:red}]
 [Factory||+getProduct(ProductType: type):Product]
 [<<enum>>;ProductType|+CC_ENUM_PRODUCT_A;+CC_ENUM_PRODUCT_B]
@@ -12,7 +12,7 @@
 [<<interface>>;Product]^-.-[ProductB]
 // [Factory]->[<<interface>>;Product]
 [Factory]-.->[<<enum>>;ProductType]
-[Factory]->[<<interface>>;Product]
+// [Factory]->[<<interface>>;Product]
 [Factory]-.->[ProductA]
 [Factory]-.->[ProductB]
 [CallClass]call->[Factory]
