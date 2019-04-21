@@ -1,4 +1,4 @@
-package com.cc.designpatterns.factorypattern;
+package com.cc.designpatterns.samplefactorypattern;
 
 public enum ProductType {
     CC_ENUM_PRODUCT_A,

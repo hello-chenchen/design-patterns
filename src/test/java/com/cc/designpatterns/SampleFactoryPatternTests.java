@@ -3,9 +3,9 @@ package com.cc.designpatterns;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-import com.cc.designpatterns.factorypattern.*;
+import com.cc.designpatterns.samplefactorypattern.*;
 
-public class FactoryPatternTests {
+public class SampleFactoryPatternTests {
     Factory factory = new Factory();
 
     @Test
