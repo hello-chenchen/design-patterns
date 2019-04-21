@@ -1,0 +1,7 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Prototype Pattern{bg:cornsilk}]
+[CallClass||+main():void{bg:red}]
+[Prototype|-value:String|+setValue(String value):void;+getValue():String;+clone():Object;]
+[CallClass]->[Prototype]
