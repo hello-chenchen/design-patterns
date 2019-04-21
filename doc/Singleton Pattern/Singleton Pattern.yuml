@@ -1,0 +1,7 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Singleton Pattern{bg:cornsilk}]
+[CallClass||+main():void{bg:red}]
+[Singleton|-singleton:Singleton|-Singleton();+getInstance():Singleton]
+[CallClass]->[Singleton]
