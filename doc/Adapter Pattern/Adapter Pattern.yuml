@@ -1,0 +1,11 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Adapter Pattern{bg:cornsilk}]
+[CallClass||+main():void{bg:red}]
+[Adaptee||+method():String]
+[<<abstruct>>;Target|-Adaptee:adaptee|+adapterMethod():Integer]
+[Adapter|-Adaptee:adaptee|+adapterMethod():Integer]
+[CallClass]->[<<abstruct>>;Target]
+[<<abstruct>>;Target]^-.-[Adapter]
+[Adaptee]<-[Adapter]
