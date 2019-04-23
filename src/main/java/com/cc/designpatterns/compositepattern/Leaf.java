@@ -7,4 +7,9 @@ public class Leaf extends Composite {
     public String operate() {
         return "Leaf::operate";
     }
+
+    @Override
+    public Composite getComposite() {
+        return null;
+    }
 }

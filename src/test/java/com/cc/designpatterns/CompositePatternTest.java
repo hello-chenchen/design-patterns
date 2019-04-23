@@ -33,5 +33,16 @@ public class CompositePatternTest {
 
         composite.addComposite(new SubComposite());
         assertEquals("SubComposite::operate Leaf::operate Leaf::operate SubComposite::operate", composite.operate());
+
+        SubComposite sub = new SubComposite();
+        sub.addComposite(new Leaf());
+        composite.addComposite(sub);
+        assertEquals("SubComposite::operate Leaf::operate Leaf::operate SubComposite::operate SubComposite::operate Leaf::operate", composite.operate());
+
+        Leaf leaf = new Leaf();
+        leaf.addComposite(new Leaf());
+        leaf.addComposite(new SubComposite());
+        composite.addComposite(leaf);
+        assertEquals("SubComposite::operate Leaf::operate Leaf::operate SubComposite::operate SubComposite::operate Leaf::operate Leaf::operate", composite.operate());
     }
 }
