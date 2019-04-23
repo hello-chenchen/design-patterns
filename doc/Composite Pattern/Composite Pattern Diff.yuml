@@ -1,0 +1,15 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Simple Composite Pattern{bg:cornsilk}]
+[CallClass||+main():void{bg:red}]
+[<<interface>>;Component||+operate():String;+addComposite(Composite: composite):boolean;+delComposite(Composite: composite):boolean;+getAllComposite():List<Composite>]
+[<<abstract>>;AbsrtactLeaf||+operate():String;+addComposite(Composite: composite):boolean;+delComposite(Composite: composite):boolean;+getAllComposite():List<Composite>]
+[<<abstract>>;Composite|-List<Composite>:child|+operate():String;+addComposite(Composite: composite):boolean;+delComposite(Composite: composite):boolean;+getAllComposite():List<Composite>]
+[Leaf||+operate():String]
+[SubComposite||+operate():String]
+[<<interface>>;Component]^-.-[<<abstract>>;AbsrtactLeaf]
+[<<interface>>;Component]^-.-[<<abstract>>;Composite]
+[<<abstract>>;AbsrtactLeaf]^-.-[Leaf]
+[<<abstract>>;Composite]^-.-[SubComposite]
+[CallClass]->[<<interface>>;Component]
