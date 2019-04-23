@@ -1,0 +1,26 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Not Bridge Pattern{bg:cornsilk}]
+[CallClass||+main():void{bg:red}]
+[<<interface>>;AbstractCar||+run:String]
+[<<interface>>;BMWCar||+run():String]
+[BMWAutoCar||+run():String]
+[BMWManuCar||+run():String]
+[<<interface>>;BenZCar||+run():String]
+[BenZAutoCar||+run():String]
+[BenZManuCar||+run():String]
+[<<interface>>;LandRoverCar||+run():String]
+[LandRoverAutoCar||+run():String]
+[LandRoverManuCar||+run():String]
+[<<interface>>;AbstractCar]^-.-[<<interface>>;BMWCar]
+[<<interface>>;AbstractCar]^-.-[<<interface>>;BenZCar]
+[<<interface>>;AbstractCar]^-.-[<<interface>>;LandRoverCar]
+[<<interface>>;BMWCar]^-.-[BMWAutoCar]
+[<<interface>>;BMWCar]^-.-[BMWManuCar]
+[<<interface>>;BenZCar]^-.-[BenZAutoCar]
+[<<interface>>;BenZCar]^-.-[BenZManuCar]
+[<<interface>>;LandRoverCar]^-.-[LandRoverAutoCar]
+[<<interface>>;LandRoverCar]^-.-[LandRoverManuCar]
+[CallClass]->[<<interface>>;AbstractCar]
+
