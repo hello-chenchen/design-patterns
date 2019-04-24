@@ -1,0 +1,13 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Facade Pattern{bg:cornsilk}]
+[CallClass||+main():void{bg:red}]
+[Facade|-SystemA:systemA;-SystemB:systemB;-SystemC:systemC|+wrapOperation():String]
+[SystemA||+operateA():String]
+[SystemB||+operateB():String]
+[SystemC||+operateC():String]
+[Facade]->[SystemA]
+[Facade]->[SystemB]
+[Facade]->[SystemC]
+[CallClass]->[Facade]
