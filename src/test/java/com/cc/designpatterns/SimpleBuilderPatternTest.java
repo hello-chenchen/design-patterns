@@ -3,9 +3,9 @@ package com.cc.designpatterns;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-import com.cc.designpatterns.samplebuilderpattern.*;
+import com.cc.designpatterns.simplebuilderpattern.*;
 
-public class SampleBuilderPatternTest {
+public class SimpleBuilderPatternTest {
 
     @Test
     public void builderTest() {

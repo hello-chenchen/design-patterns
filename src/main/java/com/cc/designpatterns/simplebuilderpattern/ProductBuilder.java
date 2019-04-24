@@ -1,4 +1,4 @@
-package com.cc.designpatterns.samplebuilderpattern;
+package com.cc.designpatterns.simplebuilderpattern;
 
 public class ProductBuilder implements Builder {
     private Product product = new Product(null, null);

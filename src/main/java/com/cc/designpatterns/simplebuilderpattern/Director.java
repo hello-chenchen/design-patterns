@@ -1,4 +1,4 @@
-package com.cc.designpatterns.samplebuilderpattern;
+package com.cc.designpatterns.simplebuilderpattern;
 
 public class Director {
     public Product generateProduct(ProductBuilder builder) {

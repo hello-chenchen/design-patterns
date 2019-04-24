@@ -1,6 +1,6 @@
-package com.cc.designpatterns.samplefactorypattern;
+package com.cc.designpatterns.simplefactorypattern;
 
-import com.cc.designpatterns.samplefactorypattern.*;
+import com.cc.designpatterns.simplefactorypattern.*;
 
 public class Factory {
 

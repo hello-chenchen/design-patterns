@@ -1,4 +1,4 @@
-package com.cc.designpatterns.samplebuilderpattern;
+package com.cc.designpatterns.simplebuilderpattern;
 
 public interface Builder {
     public boolean buildPartA();

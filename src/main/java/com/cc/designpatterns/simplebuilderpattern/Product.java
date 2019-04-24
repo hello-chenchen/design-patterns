@@ -1,4 +1,4 @@
-package com.cc.designpatterns.samplebuilderpattern;
+package com.cc.designpatterns.simplebuilderpattern;
 
 public class Product {
     private String partA;

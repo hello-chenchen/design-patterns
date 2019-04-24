@@ -1,4 +1,4 @@
-package com.cc.designpatterns.samplefactorypattern;
+package com.cc.designpatterns.simplefactorypattern;
 
 public class ProductA implements Product {
 
