@@ -6,7 +6,7 @@
 [<<interface>>;Component||+operate():String]
 [ConCreateComponent||+operate():String]
 [<<abstruct>>;Decorator|-Component:component|+Decorator(Component component);+operate():String]
-[ConCreateDecorator||+operate():String;+otherOperate():String]
+[ConCreateDecorator||+ConCreateDecorator(Component component);+operate():String;-otherOperate():String]
 [<<interface>>;Component]^-.-[ConCreateComponent]
 [<<interface>>;Component]^-.-[<<abstruct>>;Decorator]
 [<<abstruct>>;Decorator]^-.-[ConCreateDecorator]
