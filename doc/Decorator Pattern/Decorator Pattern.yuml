@@ -1,0 +1,13 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Decorator Pattern{bg:cornsilk}]
+[CallClass||+main():void{bg:red}]
+[<<interface>>;Component||+operate():String]
+[ConCreateComponent||+operate():String]
+[<<abstruct>>;Decorator|-Component:component|+Decorator(Component component);+operate():String]
+[ConCreateDecorator||+operate():String;+otherOperate():String]
+[<<interface>>;Component]^-.-[ConCreateComponent]
+[<<interface>>;Component]^-.-[<<abstruct>>;Decorator]
+[<<abstruct>>;Decorator]^-.-[ConCreateDecorator]
+[CallClass]->[<<interface>>;Component]
