@@ -1,5 +1,0 @@
-// {type:class}
-// {direction:topDown}
-// {generate:true}
-[note: Simple Composite Pattern{bg:cornsilk}]
-[<<abstract>>;Composite|-Composite:child|]
