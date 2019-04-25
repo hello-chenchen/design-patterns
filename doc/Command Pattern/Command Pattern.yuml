@@ -1,0 +1,13 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Command Pattern{bg:cornsilk}]
+[Invoker|-Command:command|+invoke():String{bg:grey}]
+[<<interface>>;Command||+excute():String]
+[CommandA|-Receiver:receiver|+excute():String]
+[Receiver||+operate():String]
+[Invoker]+->[<<interface>>;Command]
+[<<interface>>;Command]^-.-[CommandA]
+[CommandA]->[Receiver]
+[CallClass||+main():void{bg:red}]
+[CallClass]->[Invoker]
