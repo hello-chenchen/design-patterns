@@ -1,0 +1,13 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: FlyWeight Pattern{bg:cornsilk}]
+[CallClass||+main():void{bg:red}]
+[FlyWeightFactory||+getFlyWeight(String guid):String]
+[<<abstract>>;FlyWeight|-String:guid|+FlyWeight(String guid);+operate():String]
+[ConCreateFlyWeight||+ConCreateFlyWeight(String guid);+operate():String]
+[UnSharedFlyWeight||+UnSharedFlyWeight(String guid);+operate():String]
+[FlyWeightFactory]+->[<<abstract>>;FlyWeight]
+[<<abstract>>;FlyWeight]^-.-[ConCreateFlyWeight]
+[<<abstract>>;FlyWeight]^-.-[UnSharedFlyWeight]
+[CallClass]->[FlyWeightFactory]
