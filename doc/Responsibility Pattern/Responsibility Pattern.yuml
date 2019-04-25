@@ -1,0 +1,13 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Responsility Pattern{bg:cornsilk}]
+[<<abstract>>;Handler|-Handler:handler|+setHandler(Handler handler):void;+getHandler():Handler;handleRequest():String]
+[HandlerA||handleRequest():String]
+[HandlerB||handleRequest():String]
+[HandlerC||handleRequest():String]
+[<<abstract>>;Handler]^-.-[HandlerA]
+[<<abstract>>;Handler]^-.-[HandlerB]
+[<<abstract>>;Handler]^-.-[HandlerC]
+[CallClass||+main():void{bg:red}]
+[CallClass]->[<<abstract>>;Handler]
