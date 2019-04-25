@@ -1,0 +1,12 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Proxy Pattern{bg:cornsilk}]
+[CallClass||+main():void{bg:red}]
+[<<interface>>;Component||+operate():String]
+[ConcreateComponent||+operate():String]
+[ProxyComponent|-ConcreateComponent: concreateComponent|+operate():String]
+[<<interface>>;Component]^-.-[ConcreateComponent]
+[<<interface>>;Component]^-.-[ProxyComponent]
+[CallClass]->[<<interface>>;Component]
+[CallClass]->[ProxyComponent]
