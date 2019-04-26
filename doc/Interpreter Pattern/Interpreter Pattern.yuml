@@ -1,0 +1,14 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Interpreter Pattern{bg:cornsilk}]
+[<<interface>>;Expression||+interpret():int]
+[TerminalExpression|-int:value|+TreminalExpression(int value);+interpret():int]
+[SumExpression|-Expression:expression1;-Expression:expression2|+SumExpression(Expression expression1, Expression expression2);+interpret():int]
+[SubExpression|-Expression:expression1;-Expression:expression2|+SubExpression(Expression expression1, Expression expression2);+interpret():int]
+[<<interface>>;Expression]^-.-[TerminalExpression]
+[<<interface>>;Expression]^-.-[SumExpression]
+[<<interface>>;Expression]^-.-[SubExpression]
+[CallClass||+main():void{bg:red}]
+[CallClass]->[<<interface>>;Expression]
+[CallClass]->[Context{bg:grey}]
