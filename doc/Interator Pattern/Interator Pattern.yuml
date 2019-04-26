@@ -1,0 +1,15 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Interator Pattern{bg:cornsilk}]
+[<<abstract>>;Collection|Object[\]:elementData|+iterator():Interator]
+[ConCreateCollection||+interator():Interator]
+[<<interface>>;Interator||+begin():Object;+hasNext():boolean;+next():Object]
+[ConCreateInterator|-Collection:collection|+ConCreateInterator(Collection:collection);+begin():Object;+hasNext():boolean;+next():Object]
+[<<abstract>>;Collection]-.->[<<interface>>;Interator]
+[<<abstract>>;Collection]^-.-[ConCreateCollection]
+[<<interface>>;Interator]^-.-[ConCreateInterator]
+[ConCreateCollection]-.->[ConCreateInterator]
+[ConCreateInterator]->[ConCreateCollection]
+[CallClass||+main():void{bg:red}]
+[CallClass]->[<<abstract>>;Collection]
