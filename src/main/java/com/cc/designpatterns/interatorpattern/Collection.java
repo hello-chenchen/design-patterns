@@ -9,4 +9,8 @@ public interface Collection<E> {
     public boolean add(E item);
 
     public boolean remove(E item);
+
+    public E getIndexItem(int index);
+
+    public int getLength();
 }
