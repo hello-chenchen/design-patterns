@@ -43,18 +43,22 @@ public class ConCreateCollection<E> implements Collection<E> {
     }
 
     public boolean remove(E item) {
-        if(null == item) {
+        if(null == item || elementData == null) {
             return false;
         }
 
-        int tempLength = length;
         Node<E> tempNode = elementData;
-        while(tempNode.data == item) {
+        while(tempNode != null) {
+            if(tempNode.data != null && tempNode.data.equals(item)) {
+                tempNode.data = tempNode.next == null ? null : tempNode.next.data;
+                tempNode.next = tempNode.next == null ? null : tempNode.next.next;
+                length--;
+                return true;
+            }
             tempNode = tempNode.next;
-            length--;
         }
 
-        return tempLength == length ? false : true;
+        return false;
     }
 
     @Override
@@ -77,6 +81,33 @@ public class ConCreateCollection<E> implements Collection<E> {
     }
 
     public Interator<E> interator() {
-        return new ConCreateInterator<E>(this);
+        return new ConCreateInterator();
+    }
+
+    private class ConCreateInterator implements Interator<E> {
+        private int cursor;
+
+        public ConCreateInterator() {
+            this.cursor = 0;
+        }
+
+        @Override
+        public E begin() {
+            return getIndexItem(0);
+        }
+
+        @Override
+        public boolean hasNext() {
+            return cursor >= getLength() ? false : true;
+        }
+
+        @Override
+        public E next() {
+            //NOTICE: return getIndexItem(collectionIndex++); is simple, but not clearly
+            E data = getIndexItem(cursor);
+            cursor++;
+
+            return data;
+        }
     }
 }
