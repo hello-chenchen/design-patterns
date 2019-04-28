@@ -1,0 +1,9 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Templete Pattern{bg:cornsilk}]
+[<<abstract>>;AbstractClass||+operate():String;+abstract func1():String;+abstract func2():String;]
+[ClassA||+func1():String;+func2():String;]
+[<<abstract>>;AbstractClass]^-.-[ClassA]
+[CallClass||+main():void{bg:red}]
+[CallClass]->[<<abstract>>;AbstractClass]
