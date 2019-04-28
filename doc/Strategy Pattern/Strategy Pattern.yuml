@@ -1,0 +1,13 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Strategy Pattern{bg:cornsilk}]
+[<<interface>>;Strategy||+algorithm():String]
+[StrategyA||+algorithm():String]
+[StrategyB||+algorithm():String]
+[Context|-Strategy:strategy|+operate():String;setStrategy(Strategy strategy):void]
+[<<interface>>;Strategy]^-.-[StrategyA]
+[<<interface>>;Strategy]^-.-[StrategyB]
+[Context]+-[<<interface>>;Strategy]
+[CallClass||+main():void{bg:red}]
+[CallClass]->[Context]
