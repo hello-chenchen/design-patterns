@@ -1,0 +1,11 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Memento Pattern{bg:cornsilk}]
+[Memento|-String:status|+Memento(String status);+getStatus():String;+setStatus():void]
+[Organizator|-Memento:memento;-String:status|+createMemento():Memento;+SaveMemento(Memento memento):void]
+[CareTaker|-List<Memento>:mementoList|+addMemento(Memento memento):boolean;+getMemento(int index):Memento]
+[Memento]<-.-[Organizator]
+[CareTaker]+->[Memento]
+[CallClass||+main():void{bg:red}]
+[CallClass]->[CareTaker]
