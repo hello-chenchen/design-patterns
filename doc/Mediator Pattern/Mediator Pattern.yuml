@@ -1,0 +1,5 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Mediator Pattern{bg:cornsilk}]
+[<<interface>>;Mediator||+register(User user):boolean;+despatch(User receiver):boolean]
