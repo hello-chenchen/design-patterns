@@ -1,7 +1,5 @@
 package com.cc.designpatterns.interatorpattern;
 
-import java.util.Arrays;
-
 public class ConCreateCollection<E> implements Collection<E> {
     private class Node<T> {
         protected T data;

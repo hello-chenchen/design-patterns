@@ -3,7 +3,6 @@ package com.cc.designpatterns.flyweightpattern;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.cc.designpatterns.decoratorpattern.ConCreateComponent;
 import com.cc.designpatterns.flyweightpattern.FlyWeight;
 
 public class FlyWeightFactory {
