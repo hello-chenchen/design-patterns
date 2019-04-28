@@ -1,0 +1,13 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Observer Pattern{bg:cornsilk}]
+[<<abstract>>;Subject|-List<Observer>:observerList|+attach(Observer observer):boolean;+detach(Observer observer):boolean;+notify():void;+abstract getStatus():String;+abstract setStatus(String status):void]
+[SubjectA||+getStatus():String;+setStatus(String status):void]
+[<<interface>>;Observer||+update(Subject subject):void]
+[ObserverA||+update(Subject subject):void]
+[ObserverB||+update(Subject subject):void]
+[<<abstract>>;Subject]^-.-[SubjectA]
+[<<interface>>;Observer]^-.-[ObserverA]
+[<<interface>>;Observer]^-.-[ObserverB]
+[<<abstract>>;Subject]<->[<<interface>>;Observer]
