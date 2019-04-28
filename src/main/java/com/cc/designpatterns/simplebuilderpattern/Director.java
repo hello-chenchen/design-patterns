@@ -1,7 +1,7 @@
 package com.cc.designpatterns.simplebuilderpattern;
 
 public class Director {
-    public Product generateProduct(ProductBuilder builder) {
+    public Product generateProduct(Builder builder) {
         builder.buildPartA();
         builder.buildPartB();
 
