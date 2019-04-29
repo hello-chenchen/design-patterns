@@ -1,6 +1,6 @@
-package com.cc.designpatterns.abstractpattern;
+package com.cc.designpatterns.abstractfactorypattern;
 
-import com.cc.designpatterns.abstractpattern.ProductB;
+import com.cc.designpatterns.abstractfactorypattern.ProductB;
 
 public class ProductB2 implements ProductB {
 

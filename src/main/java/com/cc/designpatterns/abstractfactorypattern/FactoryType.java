@@ -1,4 +1,4 @@
-package com.cc.designpatterns.abstractpattern;
+package com.cc.designpatterns.abstractfactorypattern;
 
 public enum FactoryType {
     CC_ENUM_FACTORY_A,

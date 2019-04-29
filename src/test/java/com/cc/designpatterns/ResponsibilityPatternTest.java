@@ -2,10 +2,10 @@ package com.cc.designpatterns;
 
 import static org.junit.Assert.assertEquals;
 
-import com.cc.designpatterns.responsibiltypattern.Handler;
-import com.cc.designpatterns.responsibiltypattern.HandlerA;
-import com.cc.designpatterns.responsibiltypattern.HandlerB;
-import com.cc.designpatterns.responsibiltypattern.HandlerC;
+import com.cc.designpatterns.responsibilitypattern.Handler;
+import com.cc.designpatterns.responsibilitypattern.HandlerA;
+import com.cc.designpatterns.responsibilitypattern.HandlerB;
+import com.cc.designpatterns.responsibilitypattern.HandlerC;
 
 import org.junit.Test;
 

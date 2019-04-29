@@ -1,6 +1,6 @@
-package com.cc.designpatterns.responsibiltypattern;
+package com.cc.designpatterns.responsibilitypattern;
 
-import com.cc.designpatterns.responsibiltypattern.Handler;
+import com.cc.designpatterns.responsibilitypattern.Handler;
 
 public class HandlerC extends Handler {
     @Override

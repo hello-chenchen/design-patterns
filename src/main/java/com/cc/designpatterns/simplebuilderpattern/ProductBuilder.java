@@ -1,5 +1,7 @@
 package com.cc.designpatterns.simplebuilderpattern;
 
+import com.cc.designpatterns.simplebuilderpattern.Builder;
+
 public class ProductBuilder extends Builder {
 
     public boolean buildPartA() {

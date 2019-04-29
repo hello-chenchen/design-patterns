@@ -3,7 +3,7 @@ package com.cc.designpatterns;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-import com.cc.designpatterns.abstractpattern.*;
+import com.cc.designpatterns.abstractfactorypattern.*;
 
 public class AbstractFactoryPatternTest {
     Factory factory = new Factory();

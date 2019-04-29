@@ -1,4 +1,4 @@
-package com.cc.designpatterns.responsibiltypattern;
+package com.cc.designpatterns.responsibilitypattern;
 
 public abstract class Handler {
     protected Handler handler = null;

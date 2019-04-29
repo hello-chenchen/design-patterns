@@ -1,5 +1,7 @@
 package com.cc.designpatterns.simplebuilderpattern;
 
+import com.cc.designpatterns.simplebuilderpattern.Product;
+
 public abstract class Builder {
     protected Product product = new Product(null, null);
     public abstract boolean buildPartA();

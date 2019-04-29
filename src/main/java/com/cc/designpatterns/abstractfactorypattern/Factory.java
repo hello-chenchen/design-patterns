@@ -1,7 +1,10 @@
-package com.cc.designpatterns.abstractpattern;
+package com.cc.designpatterns.abstractfactorypattern;
 
-import com.cc.designpatterns.abstractpattern.AbstractFactory;
-import com.cc.designpatterns.abstractpattern.FactoryType;
+import com.cc.designpatterns.abstractfactorypattern.AbstractFactory;
+import com.cc.designpatterns.abstractfactorypattern.FactoryType;
+import com.cc.designpatterns.abstractfactorypattern.FactoryA;
+import com.cc.designpatterns.abstractfactorypattern.FactoryB;
+import com.cc.designpatterns.abstractfactorypattern.FactoryC;
 public class Factory {
 
     public AbstractFactory generateFactory(FactoryType type) {
