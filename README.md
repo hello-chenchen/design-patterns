@@ -1,5 +1,12 @@
 # design-patterns
-Design Patterns for java and c++
+**Design Patterns** (Currently implemented in java, c++ is on the way)
+
+## Catalog
+|    Pattern    |    Design Diagram    |    Source Code    |    Test Case    |
+|---------------|----------------------|-------------------|-----------------|
+|Simple Factory |[Simple Factory Diagram](https://github.com/hello-chenchen/design-patterns/blob/master/doc/Simple%20Factory%20Pattern/Simple-Factory-Pattern.svg)|[Simple Factory Src](https://github.com/hello-chenchen/design-patterns/tree/master/src/main/java/com/cc/designpatterns/simplefactorypattern)|[Simple Factory Test](https://github.com/hello-chenchen/design-patterns/blob/master/src/test/java/com/cc/designpatterns/SimpleFactoryPatternTest.java)|
+|Factory |[Factory Diagram](https://github.com/hello-chenchen/design-patterns/blob/master/doc/Factory%20Pattern/Factory-Pattern.svg)|[Factory Src](https://github.com/hello-chenchen/design-patterns/tree/master/src/main/java/com/cc/designpatterns/factorypattern)|[Factory Test](https://github.com/hello-chenchen/design-patterns/blob/master/src/test/java/com/cc/designpatterns/FactoryPatternTest.java)|
+|Abstract Factory |[Abstract Factory Diagram](https://github.com/hello-chenchen/design-patterns/blob/master/doc/Abstract%20Pattern/Abstract%20Pattern.svg)|[Abstract Factory Src](https://github.com/hello-chenchen/design-patterns/tree/master/src/main/java/com/cc/designpatterns/abstractpattern)|[Factory Test](https://github.com/hello-chenchen/design-patterns/blob/master/src/test/java/com/cc/designpatterns/AbstractFactoryPatternTest.java)|
 
 ## Suport Platforms
 - Linux (Current ubuntu 16.04 default desktop tested)
