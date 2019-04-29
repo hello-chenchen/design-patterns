@@ -1,7 +1,6 @@
 package com.cc.designpatterns.simplebuilderpattern;
 
-public class ProductBuilder implements Builder {
-    private Product product = new Product(null, null);
+public class ProductBuilder extends Builder {
 
     public boolean buildPartA() {
         product.setPartA("ProductBuilderA");
@@ -11,9 +10,5 @@ public class ProductBuilder implements Builder {
     public boolean buildPartB() {
         product.setPartB("ProductBuilderB");
         return true;
-    }
-
-    public Product getProduct() {
-        return product;
     }
 }

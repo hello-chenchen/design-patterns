@@ -1,0 +1,15 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: State Pattern{bg:cornsilk}]
+[<<interface>>;State||+handle(Context: context):String]
+[StateA||+handle(Context: context):String]
+[StateB||+handleContext: context():String]
+[StateC||+handleContext: context():String]
+[Context|-State:state|-changeState(State state):void;+request():String]
+[<<interface>>;State]^-.-[StateA]
+[<<interface>>;State]^-.-[StateB]
+[<<interface>>;State]^-.-[StateC]
+[Context]+->[<<interface>>;State]
+[CallClass||+main():void{bg:red}]
+[CallClass]->[Context]
