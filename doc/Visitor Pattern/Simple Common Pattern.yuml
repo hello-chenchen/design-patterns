@@ -1,0 +1,11 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Simple Common Pattern{bg:cornsilk}]
+[<<interface>>;Element||+draw():String;+print():String]
+[ElementA||+draw():String;+print():String]
+[ElementB||+draw():String;+print():String]
+[ElementC||+draw():String;+print():String]
+[<<interface>>;Element]^-.-[ElementA]
+[<<interface>>;Element]^-.-[ElementB]
+[<<interface>>;Element]^-.-[ElementC]

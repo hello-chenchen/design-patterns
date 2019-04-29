@@ -1,0 +1,17 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+[note: Visitor Pattern{bg:cornsilk}]
+[<<interface>>;Element||+accept(Visitor visitor):String]
+[ElementA||+accept(Visitor visitor):String]
+[ElementB||+accept(Visitor visitor):String]
+[ElementC||+accept(Visitor visitor):String]
+[<<interface>>;Visitor||+visit(ElementA element):Stirng;+visit(ElementB element):Stirng;+visit(ElementC element):Stirng]
+[DrawVisitor||+visit(ElementA element):Stirng;+visit(ElementB element):Stirng;+visit(ElementC element):Stirng]
+[PrintVisitor||+visit(ElementA element):Stirng;+visit(ElementB element):Stirng;+visit(ElementC element):Stirng]
+[<<interface>>;Element]^-.-[ElementA]
+[<<interface>>;Element]^-.-[ElementB]
+[<<interface>>;Element]^-.-[ElementC]
+[<<interface>>;Visitor]^-.-[DrawVisitor]
+[<<interface>>;Visitor]^-.-[PrintVisitor]
+[<<interface>>;Element]+-+[<<interface>>;Visitor]
