@@ -12,6 +12,7 @@ public class ConCreateCollection<E> implements Collection<E> {
     }
     private Node<E> elementData;
     private int length;
+    //TODO: add firstElement, and lastElement, can make add method excute time from O(n) to O(1)
 
     public ConCreateCollection() {
         this.elementData = null;
